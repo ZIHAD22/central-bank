@@ -1,4 +1,8 @@
 const btn = document.getElementById('loging')
+const pName = document.getElementById('name')
+const validName = document.getElementById('validation-name')
+const pEmail = document.getElementById('email')
+const validEmail = document.getElementById('validation-email')
 const submitArea = document.getElementById('loging-area')
 const transitionArea = document.getElementById('transition-area')
 const depositFild = document.getElementById('deposit-fild')
@@ -9,8 +13,17 @@ const depositPushValue = document.getElementById('deposit-in-value')
 const balancePushValue = document.getElementById('balance-in-value')
 const withdrawPushValue = document.getElementById('withdraw-in-value')
 btn.addEventListener('click', () => {
-    submitArea.style.display = 'none'
-    transitionArea.style.display = 'block'
+    if (pName.value === "" || pEmail.value === "") {
+        if (pName.value === "" || pEmail.value === "") {
+            validName.innerText = 'Please Inter Your Name and E-mail Both'
+            validEmail.style.Color = 'white'
+            validEmail.style.backgroundColor = '#7777'
+            validEmail.style.Wdith = '600px'
+        }
+    } else {
+        submitArea.style.display = 'none'
+        transitionArea.style.display = 'block'
+    }
 })
 depositBtn.addEventListener('click', () => {
     let depositValue = depositFild.value
