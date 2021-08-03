@@ -1,0 +1,18 @@
+body{
+    padding: 100px;
+}
+#transition-area{
+    display: none;
+}
+.deposit , .withdraw , .balance{
+    color: white;
+}
+.deposit{
+    background-color: slateblue;
+}
+.withdraw{
+    background-color: lightsalmon;
+}
+.balance{
+    background-color: orange;
+}
