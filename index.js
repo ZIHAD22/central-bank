@@ -50,4 +50,5 @@ withdrawBtn.addEventListener('click', () => {
     let finalWithdrawBalaceValue = (oldWithdrawBalanceValue - withdrawValue)
     balancePushValue.innerText = finalWithdrawBalaceValue
     console.log(withdrawValue);
+    withdrawFild.value = ''
 })
